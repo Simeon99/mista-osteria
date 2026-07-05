@@ -39,6 +39,9 @@ yarn-error.log*
 # local claude code settings (machine-specific, not shared)
 .claude/settings.local.json
 
+# machine-specific npm config (Windows-only script-shell workaround; breaks CI/Linux builds)
+.npmrc
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
