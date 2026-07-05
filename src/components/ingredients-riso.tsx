@@ -9,7 +9,7 @@ export function IngredientsRiso() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute left-[-20px] top-24 select-none whitespace-nowrap font-display text-[28vw] leading-none text-accent-soft/[0.07] md:text-[20vw]"
+        className="pointer-events-none absolute left-3 top-24 select-none whitespace-nowrap font-display text-[19vw] leading-none text-accent-soft/[0.07] md:-left-5 md:text-[20vw]"
       >
         RISO
       </div>
@@ -43,17 +43,17 @@ export function IngredientsRiso() {
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <div className="flex gap-14">
+            <div className="flex flex-wrap gap-8 sm:gap-10 md:gap-14">
               <div>
-                <div className="font-display text-4xl text-accent-soft">
+                <div className="font-display text-3xl text-accent-soft md:text-4xl">
                   Carnaroli
                 </div>
                 <div className="mt-2 text-[11px] uppercase tracking-[0.28em] text-background/45">
                   Kralj rižota
                 </div>
               </div>
-              <div className="border-l border-accent-soft/30 pl-14">
-                <div className="font-display text-4xl text-accent-soft">
+              <div className="border-l border-accent-soft/30 pl-8 sm:pl-10 md:pl-14">
+                <div className="font-display text-3xl text-accent-soft md:text-4xl">
                   Riserva
                 </div>
                 <div className="mt-2 text-[11px] uppercase tracking-[0.28em] text-background/45">

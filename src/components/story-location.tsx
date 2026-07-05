@@ -46,21 +46,21 @@ export function StoryLocation() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.1} className="grid grid-cols-2 gap-8">
+          <Reveal delay={0.1} className="grid grid-cols-2 place-items-center gap-8">
             {FEATURES.map((feature) => (
               <div
                 key={feature.title}
-                className="flex flex-col items-center text-center"
+                className="flex w-full flex-col items-center text-center"
               >
                 <feature.icon
                   size={44}
                   weight="thin"
-                  className="text-accent"
+                  className="mx-auto text-accent"
                 />
-                <p className="mt-4 font-display text-xl text-ink">
+                <p className="mt-4 w-full font-display text-xl text-ink">
                   {feature.title}
                 </p>
-                <p className="mt-2 max-w-[16ch] text-xs uppercase tracking-[0.15em] text-ink-muted">
+                <p className="mx-auto mt-2 max-w-[16ch] text-xs uppercase tracking-[0.15em] text-ink-muted">
                   {feature.caption}
                 </p>
               </div>

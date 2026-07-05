@@ -9,7 +9,7 @@ export function IngredientsPietra() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-2 -top-3 select-none whitespace-nowrap font-display text-[18vw] leading-none tracking-wide text-transparent md:text-[14vw]"
+        className="pointer-events-none absolute left-3 -top-2 select-none whitespace-nowrap font-display text-[15vw] leading-none tracking-wide text-transparent md:-left-2 md:-top-3 md:text-[14vw]"
         style={{ WebkitTextStroke: "1px rgba(43,32,24,0.14)" }}
       >
         PETRA

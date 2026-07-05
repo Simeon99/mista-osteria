@@ -120,17 +120,17 @@ const GALLERY = [
     className: "object-cover",
   },
   {
-    src: "/IMG_3405.JPG",
+    src: "/IMG_3995.JPG",
     alt: "Pica se peče u peći na drva Moretti",
     className: "object-cover",
   },
   {
-    src: "/IMG_3372.JPG",
+    src: "/IMG_4281.JPG",
     alt: "Sos se širi po svežem testu pre pečenja",
     className: "object-cover",
   },
   {
-    src: "/IMG_3671.JPG",
+    src: "/IMG_3370.JPG",
     alt: "Zapečena, hrskava kora pice",
     className: "object-cover scale-125 object-[15%_85%]",
   },
@@ -183,11 +183,10 @@ export function PizzaMenuList() {
               key={cat.key}
               type="button"
               onClick={() => setActive(cat.key)}
-              className={`text-sm font-semibold tracking-wide transition-colors ${
-                active === cat.key
-                  ? "text-accent-strong underline decoration-2 underline-offset-4"
-                  : "text-ink-muted hover:text-ink"
-              }`}
+              className={`text-sm font-semibold tracking-wide transition-colors ${active === cat.key
+                ? "text-accent-strong underline decoration-2 underline-offset-4"
+                : "text-ink-muted hover:text-ink"
+                }`}
             >
               {cat.label}
             </button>
@@ -236,9 +235,8 @@ export function PizzaMenuList() {
                         )}
                         <Reveal delay={Math.min(i, 8) * 0.04} y={16}>
                           <li
-                            className={`group list-none py-7 md:py-8 ${
-                              localI === 0 ? "" : "border-t border-border"
-                            }`}
+                            className={`group list-none py-7 md:py-8 ${localI === 0 ? "" : "border-t border-border"
+                              }`}
                           >
                             <div className="flex flex-col gap-2 transition-transform duration-500 ease-out group-hover:translate-x-1.5 md:flex-row md:items-baseline md:justify-between md:gap-8">
                               <div className="flex items-baseline gap-4">
