@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "title": "Design System: Mista Osteria",
+  "extensions": {
+    "colorMeta": {
+      "terracotta": {
+        "role": "primary",
+        "displayName": "Terracotta",
+        "canonical": "#a56d33",
+        "tonalRamp": ["#2e1c0c", "#4a2d13", "#6b421d", "#8a5726", "#a56d33", "#c08c55", "#d9b58b", "#f0ddc7"]
+      },
+      "terracotta-deep": {
+        "role": "primary",
+        "displayName": "Terracotta Deep",
+        "canonical": "#8a5726",
+        "tonalRamp": ["#2e1c0c", "#4a2d13", "#6b421d", "#8a5726", "#a56d33", "#c08c55", "#d9b58b", "#f0ddc7"]
+      },
+      "terracotta-soft": {
+        "role": "primary",
+        "displayName": "Terracotta Soft",
+        "canonical": "#c9945f",
+        "tonalRamp": ["#2e1c0c", "#4a2d13", "#6b421d", "#8a5726", "#a56d33", "#c08c55", "#d9b58b", "#f0ddc7"]
+      },
+      "flour-white": {
+        "role": "neutral",
+        "displayName": "Flour White",
+        "canonical": "#fcf7f3",
+        "tonalRamp": ["#1c140d", "#362a1e", "#55442f", "#766048", "#9c8468", "#c7af96", "#e5d8c5", "#fcf7f3"]
+      },
+      "flour-tint": {
+        "role": "neutral",
+        "displayName": "Flour Tint",
+        "canonical": "#f5ede3",
+        "tonalRamp": ["#1c140d", "#362a1e", "#55442f", "#766048", "#9c8468", "#c7af96", "#e5d8c5", "#f5ede3"]
+      },
+      "roasted-umber": {
+        "role": "neutral",
+        "displayName": "Roasted Umber",
+        "canonical": "#2b2018",
+        "tonalRamp": ["#14100b", "#241b14", "#392a1f", "#52402f", "#6e6053", "#8f8271", "#b6ac9e", "#ded8cf"]
+      },
+      "ash-umber": {
+        "role": "neutral",
+        "displayName": "Ash Umber",
+        "canonical": "#6e6053",
+        "tonalRamp": ["#14100b", "#241b14", "#392a1f", "#52402f", "#6e6053", "#8f8271", "#b6ac9e", "#ded8cf"]
+      },
+      "flour-hairline": {
+        "role": "neutral",
+        "displayName": "Flour Hairline",
+        "canonical": "#e7ddd1",
+        "tonalRamp": ["#3a3126", "#574a3a", "#776552", "#9a876f", "#bcae98", "#d6cab8", "#e7ddd1", "#f5f0e8"]
+      },
+      "oven-char": {
+        "role": "neutral",
+        "displayName": "Oven Char",
+        "canonical": "#1c140d",
+        "tonalRamp": ["#0d0906", "#1c140d", "#362a1e", "#55442f", "#766048", "#9c8468", "#c7af96", "#fcf7f3"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 only. Two lines max, one italic emphasis word allowed." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2s throughout the page." },
+      "title": { "displayName": "Title", "purpose": "Dish names, category sub-labels, triptych step names." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs and descriptions, capped 46-60ch." },
+      "label": { "displayName": "Label", "purpose": "Buttons, nav links, prices, small meta text." }
+    },
+    "shadows": [
+      {
+        "name": "offset-photo-shadow",
+        "value": "0 20px 45px -20px rgba(43, 32, 24, 0.35)",
+        "purpose": "Ink-tinted shadow used only where one photo is deliberately layered in front of another (Featured Dishes offset image pair). Not a general card-elevation token."
+      }
+    ],
+    "motion": [
+      { "name": "ease-out-strong", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default entrance/reveal easing for scroll reveals and hero entrance animations." },
+      { "name": "ease-sharp-exit", "value": "cubic-bezier(0.4, 0, 1, 1)", "purpose": "Faster, sharper easing for exits (e.g. mobile drawer close), asymmetric with its entrance." },
+      { "name": "duration-reveal", "value": "700ms", "purpose": "Scroll-triggered section reveals (marketing/explanatory content, not UI controls)." },
+      { "name": "duration-press", "value": "150ms", "purpose": "Button/icon press feedback (scale-down on active/tap)." },
+      { "name": "duration-drawer-enter", "value": "250ms", "purpose": "Mobile nav drawer open." },
+      { "name": "duration-drawer-exit", "value": "180ms", "purpose": "Mobile nav drawer close; intentionally faster than its own entrance." },
+      { "name": "stagger-child", "value": "45ms", "purpose": "Delay between cascading list items (mobile drawer links, ingredient fact grid, fermentation triptych)." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default reservation/call CTA on light sections. Pill shape, tactile press feedback.",
+      "html": "<a href=\"#\" class=\"ds-btn-primary\">Rezervišite sto<svg class=\"ds-btn-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; border-radius: 9999px; background-color: #8a5726; color: #fcf7f3; font-family: Manrope, system-ui, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.01em; padding: 14px 28px; transition: background-color 150ms ease-out, transform 150ms ease-out; } .ds-btn-primary:hover { background-color: #a56d33; } .ds-btn-primary:focus-visible { outline: 2px solid #a56d33; outline-offset: 2px; } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-icon { transition: transform 200ms ease-out; } .ds-btn-primary:hover .ds-btn-icon { transform: translateX(2px); }"
+    },
+    {
+      "name": "Primary Button (on dark)",
+      "kind": "button",
+      "refersTo": "button-primary-on-dark",
+      "description": "Same CTA inverted for the Oven Char footer/final-CTA block, where the terracotta-deep fill would read too dark.",
+      "html": "<a href=\"#\" class=\"ds-btn-on-dark\">Rezervišite sto</a>",
+      "css": ".ds-btn-on-dark { display: inline-flex; align-items: center; gap: 8px; border-radius: 9999px; background-color: #fcf7f3; color: #2b2018; font-family: Manrope, system-ui, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.01em; padding: 14px 32px; transition: background-color 150ms ease-out, transform 150ms ease-out; } .ds-btn-on-dark:hover { background-color: rgba(252, 247, 243, 0.9); } .ds-btn-on-dark:focus-visible { outline: 2px solid #c9945f; outline-offset: 2px; } .ds-btn-on-dark:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Desktop navbar link. Color-only hover transition, no motion.",
+      "html": "<a href=\"#\" class=\"ds-nav-link\">Sastojci</a>",
+      "css": ".ds-nav-link { font-family: Manrope, system-ui, sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.01em; color: #2b2018; transition: color 150ms ease; } .ds-nav-link:hover { color: #8a5726; } .ds-nav-link:focus-visible { outline: 2px solid #a56d33; outline-offset: 4px; border-radius: 2px; }"
+    },
+    {
+      "name": "Image Panel",
+      "kind": "custom",
+      "refersTo": "image-panel",
+      "description": "The system's signature component: a full-bleed photo in a large soft-radius container. Used for the hero image, dish photos, ingredient banners, and location photos.",
+      "html": "<div class=\"ds-image-panel\"><img src=\"/photo.jpg\" alt=\"\" class=\"ds-image-panel-img\" /></div>",
+      "css": ".ds-image-panel { position: relative; overflow: hidden; border-radius: 28px; aspect-ratio: 4 / 5; } .ds-image-panel-img { width: 100%; height: 100%; object-fit: cover; display: block; }"
+    },
+    {
+      "name": "Info Card",
+      "kind": "card",
+      "refersTo": "info-card",
+      "description": "Bordered surface card for grouped detail content (e.g. hours/address/phone in the Location section). Flat, no shadow.",
+      "html": "<div class=\"ds-info-card\"><p class=\"ds-info-card-label\">Radno vreme</p><p class=\"ds-info-card-value\">Ponedeljak - Petak: 12-23h</p></div>",
+      "css": ".ds-info-card { border-radius: 28px; border: 1px solid #e7ddd1; background-color: #f5ede3; padding: 32px; } .ds-info-card-label { font-family: Manrope, system-ui, sans-serif; font-weight: 600; color: #2b2018; margin: 0 0 4px; } .ds-info-card-value { font-family: Manrope, system-ui, sans-serif; font-size: 14px; color: #6e6053; margin: 0; }"
+    },
+    {
+      "name": "Icon + Label Row",
+      "kind": "custom",
+      "refersTo": "icon-label-row",
+      "description": "Pairs a Phosphor-style icon with a title and description line. Used for ingredient facts and contact details. No card wrapper.",
+      "html": "<div class=\"ds-icon-row\"><svg class=\"ds-icon-row-icon\" width=\"20\" height=\"20\" viewBox=\"0 0 256 256\" fill=\"none\"><circle cx=\"128\" cy=\"128\" r=\"96\" stroke=\"currentColor\" stroke-width=\"16\"/><path d=\"M128 72v56l40 24\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><div><p class=\"ds-icon-row-title\">Radno vreme</p><p class=\"ds-icon-row-desc\">Ponedeljak - Petak: 12-23h</p></div></div>",
+      "css": ".ds-icon-row { display: flex; align-items: flex-start; gap: 16px; } .ds-icon-row-icon { color: #a56d33; margin-top: 4px; flex-shrink: 0; } .ds-icon-row-title { font-family: Cormorant Garamond, Georgia, serif; font-size: 18px; color: #2b2018; margin: 0 0 4px; } .ds-icon-row-desc { font-family: Manrope, system-ui, sans-serif; font-size: 14px; color: #6e6053; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wood-Fired Editorial",
+    "overview": "Mista Osteria reads like a magazine spread built around a single subject: dough, fire, and the three days between them. The system is editorial-restrained (one accent, generous whitespace, a serif/sans pairing doing the work) but every design decision ultimately points back to the physical craft (the 72-hour fermentation, the wood oven, the Italian-sourced ingredients). Warmth comes from photography, named ingredients, and the terracotta accent, never from decoration for its own sake.\n\nThis system explicitly rejects the generic AI-marketing playbook: no purple/blue gradients, no tiny uppercase eyebrow labels stacked above every section, no identical three-card grids, no gradient text, no glassmorphism used as decoration, no hero-metric stat blocks. It also rejects both directions of restaurant cliché: no red-and-white checkered-tablecloth kitsch, and no sterile chain-restaurant polish. It should read as one real, specific, family-run place.",
+    "keyCharacteristics": [
+      "One accent color (terracotta) carrying warmth across the entire page, light and dark sections alike",
+      "Flat surfaces by default; depth comes from photography and whitespace, not shadows",
+      "Large soft-radius photo panels (28px) as the dominant visual device, never a grid of identical cards",
+      "A single deliberate dark inversion at the very end (final CTA + footer), not scattered dark sections",
+      "Serif display type used sparingly and always with a reason (headlines, category names), never as body text"
+    ],
+    "rules": [
+      { "name": "The One Fire Rule", "body": "Terracotta, in one of its three depths, is the only accent color on the page. It never shares a section with a second hue.", "section": "colors" },
+      { "name": "The Single Inversion Rule", "body": "The page is light-themed from hero through the location section. Exactly one deliberate switch to Oven Char happens once, at the very end, and never reverts.", "section": "colors" },
+      { "name": "The No-Mixed-Emphasis Rule", "body": "Emphasis inside a headline is italic or bold of the same Cormorant Garamond family. Never drop a sans word into a serif headline or vice versa.", "section": "typography" },
+      { "name": "The Zero-Eyebrow Rule", "body": "No small uppercase tracked label sits above section headlines. The headline and its one-sentence body do the introducing.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "No card, button, or panel gets a resting shadow. If something needs to feel lifted, use photography, whitespace, or the offset-layering pattern, not box-shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the entire page on one accent hue (terracotta, in its three depths).",
+      "Do use Terracotta Deep (#8a5726), not primary Terracotta (#a56d33), for any button or small text that needs AA contrast on Flour White.",
+      "Do keep every section flat; reach for whitespace or an image panel before reaching for a shadow.",
+      "Do use the 28px-radius image panel as the default way to show a photo full-bleed.",
+      "Do give every pressable element a scale(0.97) (or 0.90 for icon buttons) press state.",
+      "Do stack section headers vertically (headline, then one-sentence body), left-aligned by default."
+    ],
+    "donts": [
+      "Don't introduce a second accent hue anywhere, including the footer or hover states.",
+      "Don't add a shadow to a button, card, or navbar; the one offset-photo exception is not a precedent.",
+      "Don't stack a small uppercase tracked eyebrow label above a section headline.",
+      "Don't use identical three-card grids for menu items, ingredients, or anything else.",
+      "Don't use gradient text, glassmorphism as decoration, or a hero-metric stat block anywhere.",
+      "Don't reach for checkered-tablecloth kitsch or sterile chain-restaurant stock photography.",
+      "Don't invert a second section to dark. Oven Char is reserved for the final CTA + footer block only."
+    ]
+  }
+}
