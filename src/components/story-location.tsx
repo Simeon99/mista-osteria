@@ -37,7 +37,7 @@ export function StoryLocation() {
                 Kontakt
               </Link>
               <a
-                href="tel:+3816440304223"
+                href="tel:+381638124455"
                 className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 text-sm font-semibold tracking-wide text-ink transition-colors duration-150 ease-out hover:border-accent-strong hover:text-accent-strong active:scale-[0.97]"
               >
                 <PhoneIcon size={18} weight="regular" />

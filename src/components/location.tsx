@@ -23,10 +23,10 @@ export function Location() {
                 <div>
                   <p className="font-semibold text-ink">Radno vreme</p>
                   <p className="mt-1 text-sm text-ink-muted">
-                    Ponedeljak - Petak: [RADNO VREME]
+                    Ponedeljak - Četvrtak, Nedelja: 08:00 - 00:00
                   </p>
                   <p className="text-sm text-ink-muted">
-                    Subota - Nedelja: [RADNO VREME]
+                    Petak - Subota: 08:00 - 01:00
                   </p>
                 </div>
               </div>
@@ -35,7 +35,7 @@ export function Location() {
                 <MapPinIcon size={22} weight="regular" className="mt-1 shrink-0 text-accent" />
                 <div>
                   <p className="font-semibold text-ink">Adresa</p>
-                  <p className="mt-1 text-sm text-ink-muted">[ADRESA]</p>
+                  <p className="mt-1 text-sm text-ink-muted">Majke Jugovića 5, Kruševac</p>
                 </div>
               </div>
 
@@ -43,12 +43,12 @@ export function Location() {
                 <PhoneIcon size={22} weight="regular" className="mt-1 shrink-0 text-accent" />
                 <div>
                   <p className="font-semibold text-ink">Telefon</p>
-                  <p className="mt-1 text-sm text-ink-muted">[TELEFON]</p>
+                  <p className="mt-1 text-sm text-ink-muted">+381 63 8124455</p>
                 </div>
               </div>
 
               <a
-                href="tel:+381000000"
+                href="tel:+381638124455"
                 className="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-accent-strong px-7 py-3.5 text-sm font-semibold tracking-wide text-background transition-[background-color,transform] duration-150 ease-out hover:bg-accent active:scale-[0.97]"
               >
                 Pozovite nas

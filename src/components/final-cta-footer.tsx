@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  FacebookLogoIcon,
   InstagramLogoIcon,
   MapPinIcon,
   PhoneIcon,
@@ -16,8 +15,8 @@ const NAV_LINKS = [
 ];
 
 const HOURS = [
-  { label: "PON - PET:", value: "10:00 - 00:00" },
-  { label: "PON - PET:", value: "10:00 - 01:00" },
+  { label: "PON - ČET, NED:", value: "08:00 - 00:00" },
+  { label: "PET - SUB:", value: "08:00 - 01:00" },
 ];
 
 export function FinalCtaFooter() {
@@ -53,18 +52,7 @@ export function FinalCtaFooter() {
           <ul className="flex flex-col gap-2">
             <li>
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 text-base font-semibold text-ink transition-colors hover:text-accent-strong"
-              >
-                <FacebookLogoIcon size={18} weight="regular" />
-                MISTA
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/mistaosteria/"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 text-base font-semibold text-ink transition-colors hover:text-accent-strong"
@@ -75,11 +63,11 @@ export function FinalCtaFooter() {
             </li>
             <li>
               <a
-                href="tel:+3816440304223"
+                href="tel:+381638124455"
                 className="inline-flex items-center gap-2 text-base font-semibold text-ink transition-colors hover:text-accent-strong"
               >
                 <PhoneIcon size={18} weight="regular" />
-                +381 64 40304223
+                +381 63 8124455
               </a>
             </li>
           </ul>
@@ -87,7 +75,7 @@ export function FinalCtaFooter() {
           <div className="flex items-start gap-2">
             <MapPinIcon size={18} weight="regular" className="mt-0.5 shrink-0 text-ink" />
             <p className="max-w-[22ch] text-sm font-semibold uppercase tracking-wide text-ink">
-              Majke Jugovića 32, Kruševac
+              Majke Jugovića 5, Kruševac
             </p>
           </div>
 
@@ -107,9 +95,13 @@ export function FinalCtaFooter() {
       </div>
 
       <Reveal delay={0.15} className="mt-24 select-none md:mt-32">
-        <p className="whitespace-nowrap pl-6 font-display text-[19vw] leading-[0.82] text-ink lg:pl-10">
-          MISTA
-        </p>
+        <Image
+          src="/logo bez pozadine.png"
+          alt="Mista Osteria"
+          width={1169}
+          height={298}
+          className="h-auto w-[64vw] pl-6 invert lg:pl-10"
+        />
       </Reveal>
 
       <div className="mx-auto max-w-[1400px] px-6 pb-8 lg:px-10">

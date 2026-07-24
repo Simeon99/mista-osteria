@@ -16,7 +16,7 @@ import { useState } from "react";
 const NAV_LINKS = [
   { label: "Jelovnik", href: "/jelovnik" },
   { label: "Pizza meni", href: "/pizza-meni" },
-  { label: "Naša pica", href: "/nasa-prica" },
+  { label: "Naša priča", href: "/nasa-prica" },
   { label: "Sastojci", href: "/sastojci" },
 ];
 
